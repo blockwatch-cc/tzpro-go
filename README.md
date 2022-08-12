@@ -1,5 +1,7 @@
 ## tzpro-go – Official Go SDK for the TzPro API
 
+[![Build Status](https://drone.bwd.cx/api/badges/blockwatch-cc/tzpro-go/status.svg?ref=refs/heads/kuba/droneCI)](https://drone.bwd.cx/blockwatch-cc/tzpro-go)
+
 The official Blockwatch Go client library for TzPro. This SDK is free to use under a permissive license and works with the most recent version of the TzPro API v012-2022-02-22. API documentation can be found [here](https://docs.tzpro.io/api).
 
 We will maintain this SDK on a regular basis to keep track of changes to the Tezos network and add new API features as they are released. Open-source support is provided through issues in this Github repository. If you are looking for commercial support, please contact us at licensing@blockwatch.cc.
