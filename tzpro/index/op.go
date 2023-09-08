@@ -227,12 +227,12 @@ func (o Op) DecodeParams(noFail bool, onError int) (*ContractParameters, error) 
 	switch o.Parameters[0] {
 	case '"':
 		buf, err := hex.DecodeString(string(o.Parameters[1 : len(o.Parameters)-1]))
-		if err != nil && noFail {
+		if err != nil && !noFail {
 			return nil, err
 		}
 		params := &Parameters{}
 		err = params.UnmarshalBinary(buf)
-		if err != nil && noFail {
+		if err != nil && !noFail {
 			return nil, err
 		}
 		if o.param.IsValid() {
@@ -246,7 +246,7 @@ func (o Op) DecodeParams(noFail bool, onError int) (*ContractParameters, error) 
 			val := NewValue(typ, prim)
 			val.Render = onError
 			cp.ContractValue.Value, err = val.Map()
-			if err != nil && noFail {
+			if err != nil && !noFail {
 				return nil, fmt.Errorf("op %s (%d) decoding params %s: %v", o.Hash, o.Id, string(o.Parameters), err)
 			}
 			return cp, nil
