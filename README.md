@@ -1,11 +1,12 @@
-## TzPro-Go – Official Go SDK for the TzPro API
+## Blockwatch TzPro-Go – Go SDK for the TzPro API
 
-The official Blockwatch Go client library for TzPro. This SDK is free to use under a permissive license and works with the most recent version of the TzPro API v017-2023-05-31. API documentation can be found [here](https://docs.tzpro.io/legacy-api-v0).
+TzPro-Go is [Blockwatch](https://blockwatch.cc/)'s Go client library for TzPro. This SDK is free to use under a permissive license and works with the most recent version of the TzPro API v017-2023-05-31. API documentation can be found [here](https://docs.tzpro.io/legacy-api-v0).
 
-This SDK is based on [TzGo](https://github.com/blockwatch-cc/tzgo), our open-source Go library for Tezos.
+TzPro-Go is based on [TzGo](https://github.com/blockwatch-cc/tzgo), Blockwatch's open-source Go library for Tezos.
 
-Blockwatch maintains TzPro-Go on a regular basis to support changes to the Tezos protocol. We add new API features as they are released. Open-source support is provided through issues in this Github repository at a best effor basis. For commercial support options, please contact us at support@blockwatch.cc.
+Blockwatch is committed to keeping TzPro-Go up to date to support upgrades to the Tezos protocol. We add new API features as they are released. Open-source support is provided through issues in this Github repository at a best effort basis. For commercial support options, please contact us at support@blockwatch.cc.
 
+Stay up to date and talk to us via [Discord](https://discord.gg/ZAc8gcE) and [Twitter](https://twitter.com/blockwatch_data).
 
 ### TzPro-Go Versioning
 
@@ -248,7 +249,7 @@ for {
 
 ### Building complex Table Queries
 
-The [TzPro Table API](https://tzpro.com/docs/api#table-endpoints) is the fastest way to ingest and process on-chain data in bulk. The SDK defines typed query objects for most tables and allows you to add filter conditions and other configuration to these queries.
+The [TzPro Table API](https://legacy-docs.tzpro.io/legacy-api-v0/tables) is the fastest way to ingest and process on-chain data in bulk. The SDK defines typed query objects for most tables and allows you to add filter conditions and other configuration to these queries.
 
 ```go
 import (
